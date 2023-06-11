@@ -5,6 +5,7 @@
 ## Data Structures
 
 - 二叉搜索树
+- 哈希表
 - 单向链表
 
 ## Algorithm
