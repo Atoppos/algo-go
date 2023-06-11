@@ -1,8 +1,5 @@
-package main
+package insertsort
 
-import (
-	"fmt"
-)
 //插入排序
 func InsertSort(s []int) {
     l := len(s)
@@ -21,10 +18,4 @@ func InsertSort(s []int) {
         }
         s[j+1]=value
     }
-}
-
-func main(){
-	var a =[]int{7,5,41,2,1,4}
-	InsertSort(a)
-	fmt.Println(a)
 }

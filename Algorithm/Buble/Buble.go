@@ -1,8 +1,5 @@
-package main
+package buble
 
-import (
-	"fmt"
-)
 //冒泡排序
 func Buble(s []int){
 	l:=len(s)
@@ -18,11 +15,4 @@ func Buble(s []int){
 			break
 		}
 	}
-}
-
-func main(){
-	var a =[]int{4,5,5,2,9}
-	Buble(a)
-	fmt.Println(a)
-
 }

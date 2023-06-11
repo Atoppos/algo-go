@@ -1,4 +1,4 @@
-package main
+package binarysearchtree
 
 import "fmt"
 //搜索二叉树

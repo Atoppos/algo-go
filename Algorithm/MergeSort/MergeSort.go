@@ -1,19 +1,18 @@
-package main
+package mergesort
 
-import "fmt"
 //归并排序
-func mergesort(s []int)[]int{
+func Mergesort(s []int)[]int{
 	len:=len(s)
 	if len==1{
 		return s
 	}
 	m:=len/2
-	leftS:=mergesort(s[:m])
-	rightS:=mergesort(s[m:])
-	return merge(leftS,rightS)
+	leftS:=Mergesort(s[:m])
+	rightS:=Mergesort(s[m:])
+	return Merge(leftS,rightS)
 }
 
-func merge(l []int,r []int) []int{
+func Merge(l []int,r []int) []int{
 	lLen:=len(l)
 	rLen:=len(r)
 	res:=make([]int,0)
@@ -34,10 +33,4 @@ func merge(l []int,r []int) []int{
 		res=append(res, r[rIndex:]...)
 	}
 	return res
-}
-
-func main(){
-	var s=[]int{3,44,23,1,4,8,5}
-	x:=mergesort(s)
-	fmt.Println(x)
 }

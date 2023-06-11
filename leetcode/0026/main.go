@@ -1,9 +1,7 @@
-package main
-
-import "fmt"
+package removeduplicates
 
 //快慢指针删除有序数组中重复元素
-func removeDuplicates(s []int) int{
+func RemoveDuplicates(s []int) int{
 	l:=len(s)
 	if l<2{
 		return 0
@@ -17,10 +15,3 @@ func removeDuplicates(s []int) int{
 	}
 	return low+1
 }
-
-func main(){
-	var k=[]int{3,3,3,3,5,9}
-	removeDuplicates(k)
-	fmt.Println(k)
-}
-

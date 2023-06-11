@@ -1,4 +1,4 @@
-package main
+package linklist
 
 import "fmt"
 //单向链表
@@ -104,7 +104,7 @@ func (l *LList)Scan(){
 
 }
 //反转单向链表
-func (l *LList)reverseList(){
+func (l *LList)ReverseList(){
     current := l.Header
     var pre *Node
     for current != nil{
@@ -114,14 +114,4 @@ func (l *LList)reverseList(){
         current = nextNode
     }
     l.Header = pre
-}
-
-func main(){
-	x:=CreateList()
-	x.Add(3)
-	x.Add(4)
-	x.Add(5)
-	x.Scan()
-	x.reverseList()
-	x.Scan()
 }

@@ -1,6 +1,5 @@
-package main
+package binarysearch
 
-import "fmt"
 //二分搜索
 func BinarySearch(target int,s []int) int{
 	if len(s)<1{
@@ -21,10 +20,4 @@ func BinarySearch(target int,s []int) int{
 		}
 	}
 	return -1
-}
-
-func main(){
-	var s=[]int{1,2,3,4,5,6,7,7}
-	res:=BinarySearch(1,s)
-	fmt.Println(res)
 }
