@@ -1,4 +1,4 @@
-package buble
+package bublesort
 
 //冒泡排序
 func Buble(s []int){
