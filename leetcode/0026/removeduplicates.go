@@ -1,6 +1,7 @@
 package removeduplicates
 
-//快慢指针删除有序数组中重复元素
+//删除有序数组中重复项
+
 func RemoveDuplicates(s []int) int{
 	l:=len(s)
 	if l<2{
