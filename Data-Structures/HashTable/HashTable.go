@@ -1,5 +1,7 @@
 package hashtable
 
+//哈希表
+
 const expandFactor = 0.75
 
 type HashMap struct {

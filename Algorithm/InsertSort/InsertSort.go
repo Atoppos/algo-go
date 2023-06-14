@@ -1,6 +1,7 @@
 package insertsort
 
 //插入排序
+
 func InsertSort(s []int) {
     l := len(s)
     if l < 2 {

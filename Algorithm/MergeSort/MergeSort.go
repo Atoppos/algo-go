@@ -1,6 +1,7 @@
 package mergesort
 
 //归并排序
+
 func Mergesort(s []int)[]int{
 	len:=len(s)
 	if len==1{

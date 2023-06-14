@@ -1,7 +1,9 @@
 package binarysearchtree
 
 import "fmt"
+
 //搜索二叉树
+
 type Node struct{
 	Value int
 	leftNode *Node

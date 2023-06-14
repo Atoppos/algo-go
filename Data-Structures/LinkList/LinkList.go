@@ -1,7 +1,9 @@
 package linklist
 
 import "fmt"
+
 //单向链表
+
 type Node struct {
     Data interface{}
     Next *Node

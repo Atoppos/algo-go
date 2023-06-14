@@ -1,6 +1,7 @@
 package binarysearch
 
 //二分搜索
+
 func BinarySearch(target int,s []int) int{
 	if len(s)<1{
 		return -1

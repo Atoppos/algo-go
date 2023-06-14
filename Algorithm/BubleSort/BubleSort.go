@@ -1,6 +1,7 @@
 package bublesort
 
 //冒泡排序
+
 func Buble(s []int){
 	l:=len(s)
 	for i:=0;i<l;i++{
