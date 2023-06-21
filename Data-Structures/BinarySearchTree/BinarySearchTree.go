@@ -1,4 +1,4 @@
-package main
+package binarysearchtree
 
 import "fmt"
 
@@ -89,26 +89,4 @@ func(t *BinaryTree)MiddleShow(){
 		return
 	}
 	t.root.middleShow()
-}
-
-func maxDepth(root *Node) int {
-    if root==nil{
-        return 0
-    }
-    return max(maxDepth(root.leftNode),maxDepth(root.rightNode))+1
-}
-
-func max(a,b int)int{
-    if a>b{
-        return a
-    }
-    return b
-}
-
-
-func main(){
-	x:=NewTree()
-	x.Insert(4,3,3,2)
-	xx:=maxDepth(x.root)
-	fmt.Println(xx)
 }
