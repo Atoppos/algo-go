@@ -4,10 +4,13 @@ package bublesort
 
 func Buble(s []int){
 	l:=len(s)
+	if l < 2 {
+		return
+	}
 	for i:=0;i<l;i++{
 		flag:=true
 		for j:=0;j<l-i-1;j++{
-			if s[j]<s[j+1]{
+			if s[j]>s[j+1]{
 				s[j],s[j+1]=s[j+1],s[j]
 				flag=false
 			}
